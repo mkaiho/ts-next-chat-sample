@@ -13,6 +13,12 @@ services:
     working_dir: /work/ts-next-chat-sample
     ports:
       - 3001:3000
+    networks:
+      - chat-sample-network
 
 volumes:
   ts-next-chat-sample_node_modules_volume:
+
+networks:
+  chat-sample-network:
+    external: true
