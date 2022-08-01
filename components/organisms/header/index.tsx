@@ -43,10 +43,9 @@ const Header = (props: Props) => {
               App
             </Typography>
             <Button color="inherit">Login</Button>
-          </Toolbar>{" "}
+          </Toolbar>
         </AppBar>
       </ElevationScroll>
-      <Toolbar />
     </>
   );
 };

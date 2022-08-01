@@ -1,3 +1,4 @@
+import { Box, Container } from "@mui/material";
 import { NextPage } from "next";
 import { JSXElementConstructor, ReactElement, ReactNode } from "react";
 import Header from "../components/organisms/header";
@@ -10,7 +11,9 @@ const WithHeaderLayout = (props: WithHeaderLayoutProps) => {
   return (
     <>
       <Header {...props} />
-      {props.children}
+      <Container>
+        <Box sx={{ my: 8 }}>{props.children}</Box>
+      </Container>
     </>
   );
 };
