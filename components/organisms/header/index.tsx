@@ -1,11 +1,6 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import CssBaseline from "@mui/material/CssBaseline";
+import { AppBar, Toolbar } from "@mui/material";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import { Button, IconButton } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
 
 interface Props {
   children: React.ReactElement;
@@ -23,27 +18,12 @@ function ElevationScroll(props: Props) {
   });
 }
 
-const Header = (props: Props) => {
+const Header = ({ children }: Props) => {
   return (
     <>
-      <CssBaseline />
-      <ElevationScroll {...props}>
+      <ElevationScroll>
         <AppBar position="fixed">
-          <Toolbar>
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              sx={{ mr: 2 }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              App
-            </Typography>
-            <Button color="inherit">Login</Button>
-          </Toolbar>
+          <Toolbar>{children}</Toolbar>
         </AppBar>
       </ElevationScroll>
     </>

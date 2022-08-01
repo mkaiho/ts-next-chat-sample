@@ -1,7 +1,9 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { NextPageWithLayout } from ".";
-import { CssBaseline } from "@mui/material";
+import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
+
+const theme = createTheme();
 
 type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
@@ -11,10 +13,10 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
 
   return getLayout(
-    <>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   );
 }
 
