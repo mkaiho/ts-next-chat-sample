@@ -11,9 +11,10 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
+
 import MenuIcon from "@mui/icons-material/Menu";
-import Header from "../components/organisms/header";
-import Drawer from "../components/organisms/drawer";
+import Header from "@/components/organisms/header";
+import Drawer from "@/components/organisms/drawer";
 
 const sideMenuLinks: { [key: string]: string } = {
   Home: "/",

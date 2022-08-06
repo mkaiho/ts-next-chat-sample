@@ -1,7 +1,8 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { NextPageWithLayout } from ".";
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
+
+import { NextPageWithLayout } from "@/pages";
 
 const theme = createTheme();
 

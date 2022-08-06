@@ -1,6 +1,7 @@
-import { NextPageWithLayout } from ".";
-import WithHeaderLayout from "../layout/WithHeaderLayout";
 import { Box, Container } from "@mui/material";
+
+import WithHeaderLayout from "../layout/WithHeaderLayout";
+import { NextPageWithLayout } from ".";
 
 const Home: NextPageWithLayout = () => {
   return (

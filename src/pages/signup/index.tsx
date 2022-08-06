@@ -12,8 +12,9 @@ import {
   Typography,
 } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import { NextPageWithLayout } from "..";
-import WithHeaderLayout from "../../layout/WithHeaderLayout";
+
+import WithHeaderLayout from "@/layout/WithHeaderLayout";
+import { NextPageWithLayout } from "@/pages";
 
 const Signup: NextPageWithLayout = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
