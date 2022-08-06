@@ -14,7 +14,7 @@ import {
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 
 import WithHeaderLayout from "@/layout/WithHeaderLayout";
-import { NextPageWithLayout } from "@/pages";
+import { NextPageWithLayout } from "@/pages/_page";
 
 const Signup: NextPageWithLayout = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {

@@ -1,7 +1,7 @@
 import { Box, Container } from "@mui/material";
 
 import WithHeaderLayout from "../layout/WithHeaderLayout";
-import { NextPageWithLayout } from ".";
+import { NextPageWithLayout } from "@/pages/_page";
 
 const Home: NextPageWithLayout = () => {
   return (
